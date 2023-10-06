@@ -1,4 +1,4 @@
-import Header from "../componrnts/header"
+import Header from "../componrnts/header" /* importは相対パス */
 import Hero from "../componrnts/hero"
 import Footer from "../componrnts/footer"
 
