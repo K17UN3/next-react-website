@@ -1,17 +1,17 @@
+import Header from "../componrnts/header"
+import Hero from "../componrnts/hero"
+import Footer from "../componrnts/footer"
+
 export default function Home() {
   return (
     <>
-      <header>HEADER</header>
+      <Header />
 
     <main>
-      <div>
-        <h1>CUBE</h1>
-        <p>アウトプットしていくサイト</p>
-      </div>
+      <Hero />
     </main>
 
-      <footer>FOOTER</footer>
-
+      <Footer />
     </>
   )
 }
