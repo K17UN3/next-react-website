@@ -4,7 +4,7 @@ export default function About() {
   return (
     <Hero
       title="About"
-      subtitle="About development activitis"
+      subtitle="About development activities"
     />
   )
 }
