@@ -1,10 +1,8 @@
-import Layout from'components/Layout'
+import Layout from 'components/hero'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
       <Component {...pageProps} />
-    </Layout>
   ) 
 }
 
