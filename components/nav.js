@@ -6,17 +6,17 @@ export default function Nav() {
       <ul>
         <li>
           <Link href="/">
-            <a>Home</a>
+            Home
           </Link>
         </li>
         <li>
           <Link href="/about">
-            <a>About</a>
+            About
           </Link>
         </li>
         <li>
           <Link href="/blog">
-            <a>Blog</a>
+            Blog
           </Link>
         </li>
       </ul>
