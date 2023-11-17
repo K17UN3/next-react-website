@@ -1,5 +1,5 @@
 .flexContainer {
-    composes: sideBySideCenter from './styles/utils.module.css'
+    composes: sideBySideCenter from 'styles/utils.module.css'
 }
 
 .text {
