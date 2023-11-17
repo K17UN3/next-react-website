@@ -4,9 +4,9 @@ import styles from "styles/footer.module.css"
 
 export default function Footer() {
   return (
-    <footer className={style.wapper}>
+    <footer className={styles.wapper}>
       <Conteiner>
-        <div className={style.flexContainer}>
+        <div className={styles.flexContainer}>
           <Logo />
           [ソーシャル]
         </div>
