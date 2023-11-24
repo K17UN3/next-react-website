@@ -7,10 +7,10 @@ export default function Schedule() {
 export async function getStaticProps() {
     const resPromise = client.get({
     endpoint: "blogs",
-    });
-    console.log(resPromise);
+    })
+    resPromise.then((res) => console.log(res)).catch((err) => console.log(err))
 
     return {
         props: {},
-    };
+    }
 }
