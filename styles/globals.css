@@ -7,25 +7,28 @@
   --black: #222222;
   --accent: #0d87e0;
 
+/* フォントサイズ */
   --body: clamp(1rem, 0.95rem + 0.2rem, 1.125rem);
-  --display: clamp(4.5rem, 1.83rem + 11.3rem, 10rem);
-  --heading1: clamp(2rem, 1.3rem + 3rem, 4rem);
+  --display: clamp(4.5rem, 1.83rem + 11.34vw, 10rem);
+  --heading1: clamp(2rem, 1.3rem + 3vw, 4rem);
   --heading2: calc(var(--body) * 1.5);
   --heading3: calc(var(--body) * 1.2);
   --small-heading2: clamp(0.875rem, 4vw - 1rem, 1.6875rem);
   --small-heading3: calc(var(--small-heading2) * 0.86);
 
-  --space-xs: clamp(1.25rem, 1rem + 0.98rem, 1.875rem);
+/* 余白 */
+  --space-xs: clamp(1.25rem, 1rem + 0.98vw, 1.875rem);
   --space-sm: calc(var(--space-xs) * 1.5);
   --space-md: calc(var(--space-xs) * 2);
   --space-lg: calc(var(--space-xs) * 3);
   --space-xl: calc(var(--space-xs) * 4);
-  --space-jump: clamp(1.25rem, 0.35rem + 3.8rem, 3.75rem);
+  --space-jump: clamp(1.25rem, 0.35rem + 3.8vw, 3.75rem);
 }
 
+/* 基本設定 */
 body {
   color: var(--black);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;
   font-size: var(--body);
 }
 
