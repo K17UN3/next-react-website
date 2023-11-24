@@ -6,5 +6,5 @@ export default function Logo({ boxOn = false }) {
     <Link href="/" className={boxOn ? styles.box : styles.basic}>
         CUBE
     </Link>
-    );
+    )
 }
