@@ -21,8 +21,8 @@ export default function Meta({ pageTitle, pageDesc, pageImg, pageImgW, pageImgH 
 
     // OGP 画像
     const img = pageImg || siteImg.src  // pageがないときsite
-    const imgW = pageImg || siteImg.width
-    const imgH = pageImg || siteImg.height
+    const imgW = pageImgW || siteImg.width
+    const imgH = pageImgH || siteImg.height
     const imgUrl = img.startsWith('https') ? img : `${siteUrl}${img}`
     // startWithで確認して、必要に応じてsiteUrl付与
 

@@ -11,7 +11,7 @@ export default function About() {
   return (
     <Conteiner>
       <Meta
-        pageTitle='アバウト'
+        pageTitle="アバウト"
         pageDesc="About development activities"
         pageImg={eyecatch.src}
         pageImgW={eyecatch.width}
