@@ -8,11 +8,12 @@ const { siteTitle, siteDesc, siteUrl, siteType, siteIcon } = siteMeta
 // 説明
 const desc = pageDesc ?? siteDesc
 
-// URL
-const router = useRouter()
-console url = `${siteUrl}${router.asPath}`
 
 export default function Meta({ pageTitle, pageDesc }) {
+    // URL
+    const router = useRouter()
+    const url = `${siteUrl}${router.asPath}`
+    
     // タイトル
     const title = pageTitle ? `${pageTitle} | ${pageTitle}` : siteTitle
 
