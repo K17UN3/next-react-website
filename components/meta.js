@@ -23,7 +23,7 @@ export default function Meta({ pageTitle, pageDesc, pageImg, pageImgW, pageImgH 
     const img = pageImg || siteImg.src  // pageがないときsite
     const imgW = pageImg || siteImg.width
     const imgH = pageImg || siteImg.height
-    const imgUrl = img.startWith('https') ? img : `${siteUrl}${img}`
+    const imgUrl = img.startsWith('https') ? img : `${siteUrl}${img}`
     // startWithで確認して、必要に応じてsiteUrl付与
 
     return (
