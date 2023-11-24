@@ -5,11 +5,12 @@ export default function Schedule() {
 }
 
 export async function getStaticProps() {
-    console.log('処理１')
-    setTimeout(() => console.log("処理２"), 1000)
-    console.log("処理３")
+    const resPromise = client.get({
+    endpoint: "blogs",
+    });
+    console.log(resPromise);
 
     return {
         props: {},
-    }
+    };
 }
