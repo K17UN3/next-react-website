@@ -9,6 +9,7 @@ export default function Pagination({
     nextText = '',
     nextUrl = '',
 }) {
+    // 17 25 aタグ外し
     return (
         <ul className={styles.flexContainer}>
             {prevText && prevUrl && (
