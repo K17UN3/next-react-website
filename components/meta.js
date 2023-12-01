@@ -28,7 +28,7 @@ export default function Meta({ pageTitle, pageDesc, pageImg, pageImgW, pageImgH 
 
     return (
     <Head>
-        <time>{title}</time>
+        <title>{title}</title>
         <meta property="og:title" content={title} />
 
         <meta name="description" content={desc} />
