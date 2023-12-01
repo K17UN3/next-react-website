@@ -19,5 +19,5 @@ export default function ConvertBody({ contentHTML }) {
             }
         },
     })
-    return <>{convertReact}</>
+    return <>{contentReact}</>
 }
