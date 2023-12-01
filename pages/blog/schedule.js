@@ -58,7 +58,7 @@ export default function Schedule({
 }
 
 export async function getStaticProps() {
-    const slug = 'schedule'
+    const slug = 'micro'
 
     const post = await getPostBySlug(slug)
 
@@ -69,7 +69,7 @@ export async function getStaticProps() {
             title: post.title,
             publish: post.publish,
             content: post.content,
-            eyecatch: post.content,
+            eyecatch: post.eyecatch,
             categories: post.categories,
             description: description,
         },
