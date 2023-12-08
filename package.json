@@ -20,6 +20,7 @@
     "microcms-js-sdk": "^2.7.0",
     "next": "13.5.4",
     "plaiceholder": "^3.0.0",
+    "post": "^0.0.1",
     "react": "^18",
     "react-dom": "^18",
     "sharp": "^0.33.0"
