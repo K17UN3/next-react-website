@@ -1,3 +1,4 @@
+import { getAllPosts } from "lib/api"
 import Meta from "components/meta"
 import Conteiner from "components/container"
 import Hero from "components/hero"
@@ -9,4 +10,15 @@ export default function Blog() {
       <Hero title="Blog" subtitle="Recent Posts" />
     </Conteiner>
   )
+}
+
+// getStaticProps
+export async function getStaticProps() {
+  const posts = await getAllPosts()
+
+  return {
+    props: {
+      posts: posts,
+    },
+  }
 }
