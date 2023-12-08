@@ -23,7 +23,6 @@ export default function Blog({ posts }) {
 // getStaticProps
 export async function getStaticProps() {
   const posts = await getAllPosts()
-
   for (const post of posts) {
     if (!post.hasOwnProperty('eyecatch')) {
       post.eyecatch = eyecatchLocal
