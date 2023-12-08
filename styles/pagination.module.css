@@ -28,3 +28,8 @@
     font-size: var(--small-heading3);
     font-weight: 400;
 }
+
+.post figure {
+    position: relative;
+    aspect-ratio: 16/9;
+}
