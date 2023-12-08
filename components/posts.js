@@ -15,6 +15,7 @@ export default function Posts({ posts }) {
                                 layout='responsive'
                                 width={eyecatch.width}
                                 height={eyecatch.height}
+                                sizes='(min-width: 1152px) 576px,50vw'
                                 placeholder='blue'
                                 blurDataURL={eyecatch.blurDataURL}
                             />

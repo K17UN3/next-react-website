@@ -13,3 +13,18 @@
     align-items: center;
     gap: 0.5em;
 }
+
+/* CSSS Gridで２列に並べる */
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-jump);
+    margin-top: var(--space-xs);
+    margin-bottom: var(--space-lg);
+}
+
+.post h2 {
+    margin-top: 0.5em;
+    font-size: var(--small-heading3);
+    font-weight: 400;
+}
