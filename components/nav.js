@@ -9,6 +9,10 @@ export default function Nav() {
     setNavIsOpen((prev) => !prev)
   }
 
+  const closeNav = () => {
+    setNavIsOpen(false)
+  }
+
   return (
     <nav className={navIsOpne ? styles.open : styles.close}>
       <button className={styles.btn} onClick={toggleNav}>
@@ -17,17 +21,17 @@ export default function Nav() {
 
       <ul className={styles.list}>
         <li>
-          <Link href="/">
+          <Link href="/" onClick={closeNav}>
             Home
           </Link>
         </li>
         <li>
-          <Link href="/about">
+          <Link href="/about" onClick={closeNav}>
             About
           </Link>
         </li>
         <li>
-          <Link href="/blog">
+          <Link href="/blog" onClick={closeNav}>
             Blog
           </Link>
         </li>
