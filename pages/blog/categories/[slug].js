@@ -1,4 +1,5 @@
 import { getAllCategories, getAllPostsByCategory } from 'lib/api'
+import Meta from 'components/meta'
 import { Container } from 'components/Container'
 import PostHeader from 'components/post-Header'
 import Posts from 'components/posts'
@@ -10,6 +11,7 @@ import { eyecatchLocal } from 'lib/canstants'
 export default function Categories({ name, posts}) {
     return (
         <Container>
+            <Meta pageTitle={name} pageDesc={`${name}に関する記事`} />
             <PostHeader title={name} subtitle="Blog Category" />
             <Posts posts={posts} />
         </Container>
