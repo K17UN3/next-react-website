@@ -14,16 +14,57 @@
 @media (max-width: 768px) {
     /* ボタン */
     .btn {
+        all: unset;
+        outline: revert;
+        -webkit-tap-highlight-color: transparent;
+        cursor: pointer;
+        width: 42px;
+        height: 42px;
         position: relative;
         z-index: 200;
     }
     .close .btn {
-        color: blue;
+        color: var(--gray-75)
     }
 
     .open .btn {
-        color: red;
+        color: var(--white)
     }
+
+    /* ボタン内のバー */
+.btn {
+    display: grid;
+    place-items: center;
+}
+
+.btn::before,
+.btn::after,
+.btn .bar {
+    grid-area: 1 / 1;
+    content: '';
+    display: block;
+    width: 32px;
+    height: 1px;
+    background-color: currentColor;
+    transition: transform 0.4s;
+}
+
+.close .btn::before {
+    transform: translateY(-8px);
+}
+.close .btn::after {
+    transform: translateY(8px);
+}
+
+.open .btn::before {
+    transform: rotate(45deg);
+}
+.open .btn::after {
+    transform: rotate(45deg);
+}
+.open .btn .bar {
+    transform: scale(0);
+}
 
     /* メニュー（オーバーレイ） */
 .list {
@@ -39,7 +80,7 @@
     transform: translateX(-100%);
 }
 
-/* メニュ（オーバーレイ内の配置） */
+    /* メニュ（オーバーレイ内の配置） */
 .list {
     display: grid;
     gap: 40px;
