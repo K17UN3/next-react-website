@@ -9,7 +9,6 @@ export default function Pagination({
     nextText = '',
     nextUrl = '',
 }) {
-    // 17 25 aタグ外し
     return (
         <ul className={styles.flexContainer}>
             {prevText && prevUrl && (
@@ -22,12 +21,12 @@ export default function Pagination({
             )}
             {nextText && nextUrl && (
                 <li className={styles.next}>
-                    <Link href={nextUrl} className={styles.iconTxt}>
+                    <Link href={nextUrl} className={styles.iconText}>
                         <span>{nextText}</span>
-                        <FontAwesomeIcon icon={faChevronLeft} color='var(--gray-25)' />
+                        <FontAwesomeIcon icon={faChevronRight} color='var(--gray-25)' />
                     </Link>
                 </li>
             )}
         </ul>
-    )
+    );
 }

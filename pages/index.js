@@ -15,7 +15,7 @@ export default function Home({ posts }) {
       <Hero title="CUBE" subtitle="アウトプットしていくサイト" imageOn />
 
       <Posts posts={posts} />
-      <Pagination nextUrl="/blog" nextText="More Posts" />
+      <Pagination nextUrl='/blog' nextText='More Posts' />
     </Container>
   )
 }
@@ -27,7 +27,6 @@ export async function getStaticProps() {
     if (!post.hasOwnProperty('eyecatch')) {
       post.eyecatch = eyecatchLocal
     }
-    console.log(post.eyecatch.url)
     const { base64 } = await getPlaiceholder(post.eyecatch.url)
     post.eyecatch.blurDataURL = base64
   }

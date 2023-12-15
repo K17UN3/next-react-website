@@ -14,11 +14,11 @@
     gap: 0.5em;
 }
 
-/* CSSS Gridで２列に並べる */
+/* CSS Gridで２列に並べる */
 .gridContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--space-jump);
+    gap: var(--space-xs);
     margin-top: var(--space-xs);
     margin-bottom: var(--space-lg);
 }

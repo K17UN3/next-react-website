@@ -2,7 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['image.microcms-assets.io'],
+    remotePatterns: [{
+      protocol: 'https',
+      hostname: 'images.microcms-assets.io',
+    }],
+    domains: ['images.microcms-assets.io'],
   },
 }
 
