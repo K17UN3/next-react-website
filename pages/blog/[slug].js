@@ -77,7 +77,6 @@ export default function Post({
 
 export async function getStaticPaths() {
     const allSlugs = await getAllSlugs(5)
-
     return {
         paths: allSlugs.map(({ slug }) => `/blog/${slug}`),
         fallback: 'blocking',
