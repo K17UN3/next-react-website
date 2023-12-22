@@ -92,20 +92,20 @@ export async function getStaticProps(context) {
         return { notFound: true }
     } else {
 
-        const description = extractText(post.content)
+        const description = extractText(post.content);
 
-        const eyecatch = post.eyecatch ?? eyecatchLocal
+        const eyecatch = post.eyecatch ?? eyecatchLocal;
 
-        const { base64 } = await getPlaiceholder(eyecatch.url)
-        eyecatch.blurDataURL = base64
+        const { base64 } = await getPlaiceholder(eyecatch.url);
+        eyecatch.blurDataURL = base64;
 
-        const allSlugs = await getAllSlugs()
-        const [prevPost, nextPost] = prevNextPost(allSlugs, slug)
+        const allSlugs = await getAllSlugs();
+        const [prevPost, nextPost] = prevNextPost(allSlugs, slug);
 
         return {
             props: {
                 title: post.title,
-                publish: post.publish,
+                publish: post.publishDate,
                 content: post.content,
                 eyecatch: eyecatch,
                 categories: post.categories,
@@ -113,6 +113,6 @@ export async function getStaticProps(context) {
                 prevPost: prevPost,
                 nextPost: nextPost,
             },
-        }
+        };
     }
 }

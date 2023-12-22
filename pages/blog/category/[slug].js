@@ -8,7 +8,7 @@ import { getPlaiceholder } from 'plaiceholder'
 // ローカルの代替アイキャッチ画像
 import { eyecatchLocal } from 'lib/canstants'
 
-export default function Categories({ name, posts}) {
+export default function Category({ name, posts}) {
     return (
         <Container>
             <Meta pageTitle={name} pageDesc={`${name}に関する記事`} />
