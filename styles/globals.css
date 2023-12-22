@@ -8,7 +8,7 @@
   --accent: #0d87e0;
 
 /* フォントサイズ */
-  --body: clamp(1rem, 0.95rem + 0.2rem, 1.125rem);
+  --body: clamp(1rem, 0.95rem + 0.2vw, 1.125rem);
   --display: clamp(4.5rem, 1.83rem + 11.34vw, 10rem);
   --heading1: clamp(2rem, 1.3rem + 3vw, 4rem);
   --heading2: calc(var(--body) * 1.5);

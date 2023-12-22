@@ -60,7 +60,7 @@
     transform: rotate(45deg);
 }
 .open .btn::after {
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
 }
 .open .btn .bar {
     transform: scale(0);

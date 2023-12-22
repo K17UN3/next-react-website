@@ -1,7 +1,7 @@
 .basic {
-    font-size: var(--heading2);
+    font-size: var(--small-heading2);
     font-weight: 700;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.15rem;
 }
 
 .box {
