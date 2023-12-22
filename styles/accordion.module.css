@@ -1,5 +1,5 @@
 .open,
-.close {
+    .close {
     border: solid 1px var(--gray-25);
 }
 
