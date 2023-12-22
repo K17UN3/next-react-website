@@ -1,4 +1,5 @@
-.open {
+.open,
+.close {
     border: solid 1px var(--gray-25);
 }
 
@@ -32,6 +33,40 @@
 }
 
 /* テキスト */
+.text {
+    overflow: hidden;
+    height: 0px;
+    transition: none;
+}
+
+.open .text {
+    animation: openAnim 0.5s forwards;
+}
+.close .text {
+    animation: closeAnim 0.5s forwards;
+}
+
+@keyframes openAnim {
+    0% {
+        height: 0px;
+    }
+    99% {
+        height: var(--text-height);
+    }
+    100% {
+        height: auto;
+    }
+}
+
+@keyframes closeAnim {
+    0% {
+        height: var(--text-height);
+    }
+    100% {
+        height: 0px;
+    }
+}
+
 .textInner {
     padding: 0 1.14em 1.14em;
     font-size: calc(var(--body) * 0.875);
