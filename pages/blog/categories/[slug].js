@@ -1,7 +1,7 @@
 import { getAllCategories, getAllPostsByCategory } from 'lib/api'
 import Meta from 'components/meta'
-import { Container } from 'components/Container'
-import PostHeader from 'components/post-Header'
+import { Container } from 'components/container'
+import PostHeader from 'components/post-header'
 import Posts from 'components/posts'
 import { getPlaiceholder } from 'plaiceholder'
 
