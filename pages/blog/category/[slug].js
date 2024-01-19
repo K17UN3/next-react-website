@@ -27,7 +27,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(context) {
-    const catSlug = context.param.slulg
+    const catSlug = context.params.catSlug
 
     const allCats = await getAllCategories()
     const cat = allCats.find(({ slug }) => slug === catSlug)
